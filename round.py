@@ -2,6 +2,7 @@
 
 from dice import Dice
 from die import Die
+from print_utils import *
 
 class Round:
     """Class to create Round in a game of Yahtzee.

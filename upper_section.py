@@ -265,7 +265,7 @@ class UpperSection:
         if self.sixes_scored:
             raise errors.AlreadyScored
         else:
-            self._sixes = sum(die.value for die in dice if die.value == 4)
+            self._sixes = sum(die.value for die in dice if die.value == 6)
             self.sixes_scored = True
 
     @property
