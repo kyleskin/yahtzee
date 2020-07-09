@@ -13,6 +13,8 @@ In the terminal:
 ```bash
 python3 yahtzee.py
 ```
+### How to play:
+When the game first launches, you'll be prompted to indicate how many players there will be, then you will be asked for their names.
 
 ## Work in Progress
 Currently there needs to be improvements made to the error handling and input sanitization. Invalid selections will cause the program to crash.

@@ -12,7 +12,7 @@ class Die:
         value (int) = the current value of the die (the number showing up)
     """
 
-    def __init__(self, name: str, max_value: int):
+    def __init__(self, name, max_value):
         """Create die with a name and max value.
 
         Parameters:
@@ -24,7 +24,7 @@ class Die:
         self._value = max_value
 
     @property
-    def name(self) -> str:
+    def name(self):
         """Get die's name.
         
         Returns:
@@ -33,7 +33,7 @@ class Die:
         return self._name
 
     @name.setter
-    def name(self, new_name: str):
+    def name(self, new_name):
         """Set die's name.
         
         Parameters:
@@ -42,7 +42,7 @@ class Die:
         self._name = new_name
 
     @property
-    def max_value(self) -> int:
+    def max_value(self):
         """Get die's max value.
         
         Returns:
@@ -51,7 +51,7 @@ class Die:
         return self._max_value
 
     @property
-    def value(self) -> int:
+    def value(self):
         """Get the die's current value, i.e. what has been rolled.
         
         Returns:
@@ -60,7 +60,7 @@ class Die:
         return self._value
 
     @value.setter
-    def value(self, new_value: int):
+    def value(self, new_value):
         """Set the die's current value.
         
         Parameters:
@@ -77,7 +77,7 @@ class Die:
         """
         self.value = randint(1, self.max_value)
 
-    def __lt__(self, other: Die) -> bool:
+    def __lt__(self, other):
         """Order dice according to their value.
         
         Returns:
@@ -85,7 +85,7 @@ class Die:
         """
         return self.value < other.value
 
-    def __str__(self) -> str:
+    def __str__(self):
         """Print out the die's value.
 
         If value is less than 6, ascii art will be displayed,

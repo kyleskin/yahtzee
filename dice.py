@@ -1,6 +1,5 @@
 """Represents a collection of Dice."""
 
-from typing import List
 from die import Die
 
 
@@ -42,7 +41,7 @@ class Dice:
         """
         return self._dice
 
-    def __getitem__(self, index: int) -> Die:
+    def __getitem__(self, index):
         """Return die at index.
 
         Returns:
@@ -58,7 +57,7 @@ class Dice:
         """
         return iter(self.dice)
 
-    def __len__(self) -> int:
+    def __len__(self):
         """Return length of the list of dice.
 
         Returns:
@@ -66,7 +65,7 @@ class Dice:
         """
         return len(self.dice)
 
-    def format_header(self) -> str:
+    def format_header(self):
         """Format the header.
 
         A dividing string will appear between each column
@@ -87,7 +86,7 @@ class Dice:
 
         return header
 
-    def format_rolls(self) -> str:
+    def format_rolls(self):
         """Format the list of dice rolls.
 
         A dividing string will appear between each column
@@ -110,7 +109,7 @@ class Dice:
         for die in self.dice:
             die.roll()
 
-    def __str__(self) -> str:
+    def __str__(self):
         """Print header and latest results of rolling dice.
 
         Returns:

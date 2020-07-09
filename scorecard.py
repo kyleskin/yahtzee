@@ -36,7 +36,7 @@ class Scorecard:
         self._grand_total = self.up.total + self.low.total
 
     @property
-    def up(self) -> UpperSection:
+    def up(self):
         """Get the upper section of the scorecard.
         
         Returns:
@@ -45,7 +45,7 @@ class Scorecard:
         return self._up
 
     @property
-    def low(self) -> LowerSection:
+    def low(self):
         """Get the lower section of the scorecard.
         
         Returns:
@@ -242,7 +242,7 @@ class Scorecard:
         """
         return self.up.total + self.low.total
 
-    def score(self, selection: str, dice: Dice):
+    def score(self, selection, dice):
         """Score the selected category.
 
         Parameters:

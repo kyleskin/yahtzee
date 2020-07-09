@@ -17,7 +17,7 @@ class Round:
                       Die("3", 6), Die("4", 6),
                       Die("5", 6)])
 
-    def __init__(self, players: List(Player), round_num: int):
+    def __init__(self, players, round_num):
         """Set up a round.
 
         Parameters:
@@ -36,7 +36,7 @@ class Round:
             if len(self.players) > 1:
                 input(f"\n  Press <ENTER> to start next player's turn")
 
-    def take_turns(self, player: Player):
+    def take_turns(self, player):
         """Take a turn - rolling dice up to 3 times.
 
         During a turn, the dice are rolled and the player
@@ -66,7 +66,7 @@ class Round:
         print_dice_row(self.DICE)
         self.score_round(player)
 
-    def parse_kept_dice(self, kept_dice, keep_rolling) -> bool:
+    def parse_kept_dice(self, kept_dice, keep_rolling):
         """Determine which dice the player wants to keep.
 
         Parameters:
@@ -112,7 +112,7 @@ class Round:
         print_scorecard(self.round_num, player)
 
     @property
-    def round_num(self) -> int:
+    def round_num(self):
         """Which number round this instance is in the whole game.
         
         Returns:
@@ -121,7 +121,7 @@ class Round:
         return self._round_num
 
     @property
-    def players(self) -> [Player]:
+    def players(self):
         """List of Players in the round.
         
         Returns:

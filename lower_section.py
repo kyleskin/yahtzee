@@ -52,7 +52,7 @@ class LowerSection:
         self._total = 0
 
     @property
-    def three_kind(self) -> int:
+    def three_kind(self):
         """Get score for 3 of a kind.
         
         Returns:
@@ -61,7 +61,7 @@ class LowerSection:
         return self._three_kind
 
     @three_kind.setter
-    def three_kind(self, dice: Dice):
+    def three_kind(self, dice):
         """Score 3 of a kind.
             
         Parameters:
@@ -85,7 +85,7 @@ class LowerSection:
             self.three_kind_scored = True
 
     @property
-    def three_kind_scored(self) -> bool:
+    def three_kind_scored(self):
         """Determine if 3 of a kind has been scored already.
         
         Returns:
@@ -94,7 +94,7 @@ class LowerSection:
         return self._three_kind_scored
 
     @three_kind_scored.setter
-    def three_kind_scored(self, scored: bool):
+    def three_kind_scored(self, scored):
         """Set if 3 of kind has been scored.
 
         Parameters:
@@ -103,7 +103,7 @@ class LowerSection:
         self._three_kind_scored = scored
 
     @property
-    def four_kind(self) -> int:
+    def four_kind(self):
         """Get score for 4 of a kind.
         
         Returns:
@@ -112,7 +112,7 @@ class LowerSection:
         return self._four_kind
 
     @four_kind.setter
-    def four_kind(self, dice: Dice):
+    def four_kind(self, dice):
         """Score for 4 of a kind.
         
         Parameters:
@@ -136,7 +136,7 @@ class LowerSection:
             self.four_kind_scored = True
 
     @property
-    def four_kind_scored(self) -> bool:
+    def four_kind_scored(self):
         """Determine if 4 of a kind has been scored already.
         
         Returns:
@@ -145,7 +145,7 @@ class LowerSection:
         return self._four_kind_scored
 
     @four_kind_scored.setter
-    def four_kind_scored(self, scored: bool):
+    def four_kind_scored(self, scored):
         """Set if 4 of kind has been scored.
         
         Parameters:
@@ -154,7 +154,7 @@ class LowerSection:
         self._four_kind_scored = scored
 
     @property
-    def full_house(self) -> int:
+    def full_house(self):
         """Get score for full house.
         
         Returns:
@@ -163,7 +163,7 @@ class LowerSection:
         return self._full_house
 
     @full_house.setter
-    def full_house(self, dice: Dice):
+    def full_house(self, dice):
         """Score full house.
         
         Parameters:
@@ -188,7 +188,7 @@ class LowerSection:
             self.full_house_scored = True
     
     @property
-    def full_house_scored(self) -> bool:
+    def full_house_scored(self):
         """Determine if full house has been scored already.
         
         Returns:
@@ -197,7 +197,7 @@ class LowerSection:
         return self._full_house_scored
     
     @full_house_scored.setter
-    def full_house_scored(self, scored: bool):
+    def full_house_scored(self, scored):
         """Set if full house has been scored.
         
         Parameters:
@@ -206,7 +206,7 @@ class LowerSection:
         self._full_house_scored = scored
 
     @property
-    def small_straight(self) -> int:
+    def small_straight(self):
         """Get score for small straight.
         
         Returns:
@@ -215,7 +215,7 @@ class LowerSection:
         return self._small_straight
 
     @small_straight.setter
-    def small_straight(self, dice: Dice):
+    def small_straight(self, dice):
         """Score small straight.
         
         Parameters:
@@ -235,7 +235,7 @@ class LowerSection:
             self.small_straight_scored = True
 
     @property
-    def small_straight_scored(self) -> bool:
+    def small_straight_scored(self):
         """Determine if small straight has been scored already.
         
         Returns:
@@ -253,7 +253,7 @@ class LowerSection:
         self._small_straight_scored = scored
 
     @property
-    def large_straight(self) -> int:
+    def large_straight(self):
         """Get score for large straight.
         
         Returns:
@@ -262,7 +262,7 @@ class LowerSection:
         return self._large_straight
 
     @large_straight.setter
-    def large_straight(self, dice: Dice):
+    def large_straight(self, dice):
         """Score large straight.
         
         Parameters:
@@ -281,7 +281,7 @@ class LowerSection:
             self.large_straight_scored = True
 
     @property
-    def large_straight_scored(self) -> bool:
+    def large_straight_scored(self):
         """Determine if large straight has been scored already.
         
         Returns:
@@ -290,7 +290,7 @@ class LowerSection:
         return self._large_straight_scored
 
     @large_straight_scored.setter
-    def large_straight_scored(self, scored: bool):
+    def large_straight_scored(self, scored):
         """Set if large straight has been scored.
         
         Parameters:
@@ -299,7 +299,7 @@ class LowerSection:
         self._large_straight_scored = scored
 
     @property
-    def yahtzee(self) -> int:
+    def yahtzee(self):
         """Get score for yahtzee.
         
         Returns:
@@ -308,7 +308,7 @@ class LowerSection:
         return self._yahtzee
 
     @yahtzee.setter
-    def yahtzee(self, dice: Dice):
+    def yahtzee(self, dice):
         """Score yahtzee.
         
         Parameters:
@@ -339,7 +339,7 @@ class LowerSection:
                 self.num_yahtzee_bonus += 1
 
     @property
-    def yahtzee_scored(self) -> bool:
+    def yahtzee_scored(self):
         """Determine if yahtzee has been scored already.
         
         Returns:
@@ -348,7 +348,7 @@ class LowerSection:
         return self._yahtzee_scored
 
     @yahtzee_scored.setter
-    def yahtzee_scored(self, scored: bool):
+    def yahtzee_scored(self, scored):
         """Set if yahtzee is scored already.
         
         Parameters:
@@ -357,7 +357,7 @@ class LowerSection:
         self._yahtzee_scored = scored
 
     @property
-    def num_yahtzee_bonus(self) -> int:
+    def num_yahtzee_bonus(self):
         """Get number of yahtzee bonuses.
         
         Returns:
@@ -366,7 +366,7 @@ class LowerSection:
         return self._num_yatzhee_bonus
 
     @num_yahtzee_bonus.setter
-    def num_yahtzee_bonus(self, i: int):
+    def num_yahtzee_bonus(self, i):
         """Set the number of yahtzee bonuses.
         
         Parameters:
@@ -375,7 +375,7 @@ class LowerSection:
         self._num_yatzhee_bonus = i
 
     @property
-    def yahtzee_bonus(self) -> int:
+    def yahtzee_bonus(self):
         """Get score of yahtzee bonuses.
         
         Returns:
@@ -384,7 +384,7 @@ class LowerSection:
         return self.num_yahtzee_bonus * 100
 
     @property
-    def chance(self) -> int:
+    def chance(self):
         """Get score for chance.
         
         Returns:
@@ -393,7 +393,7 @@ class LowerSection:
         return self._chance
 
     @chance.setter
-    def chance(self, dice: Dice):
+    def chance(self, dice):
         """Score chance.
         
         Parameters:
@@ -406,7 +406,7 @@ class LowerSection:
         self.chance_scored = True
 
     @property
-    def chance_scored(self) -> bool:
+    def chance_scored(self):
         """Determine if chance has been scored already.
         
         Returns:
@@ -415,7 +415,7 @@ class LowerSection:
         return self._chance_scored
     
     @chance_scored.setter
-    def chance_scored(self, scored: bool):
+    def chance_scored(self, scored):
         """Set if chance has been scored.
         
         Parameters:
@@ -424,7 +424,7 @@ class LowerSection:
         self._chance_scored = scored
 
     @property
-    def total(self) -> int:
+    def total(self):
         """Get the total score for the lower section.
         
         Returns:

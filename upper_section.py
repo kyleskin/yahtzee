@@ -47,7 +47,7 @@ class UpperSection:
         self._total = 0
 
     @property
-    def aces(self) -> int:
+    def aces(self):
         """Get score for aces.
         
         Returns:
@@ -56,7 +56,7 @@ class UpperSection:
         return self._aces
 
     @aces.setter
-    def aces(self, dice: Dice):
+    def aces(self, dice):
         """Score aces.
 
         Parameters:
@@ -69,7 +69,7 @@ class UpperSection:
             self.aces_scored = True
 
     @property
-    def aces_scored(self) -> bool:
+    def aces_scored(self):
         """Determine if aces has been scored.
         
         Returns:
@@ -78,7 +78,7 @@ class UpperSection:
         return self._aces_scored
 
     @aces_scored.setter
-    def aces_scored(self, scored: bool):
+    def aces_scored(self, scored):
         """Set if aces has been scored.
 
         Parameters:
@@ -87,7 +87,7 @@ class UpperSection:
         self._aces_scored = scored
 
     @property
-    def twos(self) -> int:
+    def twos(self):
         """Get score for twos.
 
         Returns:
@@ -96,7 +96,7 @@ class UpperSection:
         return self._twos
 
     @twos.setter
-    def twos(self, dice: Dice):
+    def twos(self, dice):
         """Score for twos.
 
         Parameters:
@@ -109,7 +109,7 @@ class UpperSection:
             self.twos_scored = True
 
     @property
-    def twos_scored(self) -> bool:
+    def twos_scored(self):
         """Determine if twos has been scored already.
         
         Returns:
@@ -118,7 +118,7 @@ class UpperSection:
         return self._twos_scored
 
     @twos_scored.setter
-    def twos_scored(self, scored: bool):
+    def twos_scored(self, scored):
         """Set if twos has been scored already.
 
         Parameters:
@@ -136,7 +136,7 @@ class UpperSection:
         return self._threes
 
     @threes.setter
-    def threes(self, dice: Dice):
+    def threes(self, dice):
         """Score for threes.
 
         Parameters:
@@ -149,7 +149,7 @@ class UpperSection:
             self.threes_scored = True
 
     @property
-    def threes_scored(self) -> bool:
+    def threes_scored(self):
         """Determine if threes has been scored already.
 
         Returns:
@@ -158,7 +158,7 @@ class UpperSection:
         return self._threes_scored
 
     @threes_scored.setter
-    def threes_scored(self, scored: bool):
+    def threes_scored(self, scored):
         """Set if threes has been scored.
 
         Parameters:
@@ -167,7 +167,7 @@ class UpperSection:
         self._threes_scored = scored
 
     @property
-    def fours(self) -> int:
+    def fours(self):
         """Get score for fours.
 
         Returns:
@@ -176,7 +176,7 @@ class UpperSection:
         return self._fours
 
     @fours.setter
-    def fours(self, dice: Dice):
+    def fours(self, dice):
         """Score fours.
 
         Parameters:
@@ -198,7 +198,7 @@ class UpperSection:
         return self._fours_scored
 
     @fours_scored.setter
-    def fours_scored(self, scored: bool):
+    def fours_scored(self, scored):
         """Set if fours has been scored.
 
         Parameters:
@@ -216,7 +216,7 @@ class UpperSection:
         return self._fives
 
     @fives.setter
-    def fives(self, dice: Dice):
+    def fives(self, dice):
         """Score fives.
 
         Parameters:
@@ -238,7 +238,7 @@ class UpperSection:
         return self._fives_scored
 
     @fives_scored.setter
-    def fives_scored(self, scored: bool):
+    def fives_scored(self, scored):
         """Set if fives has been scored.
 
         Parameters:
@@ -256,7 +256,7 @@ class UpperSection:
         return self._sixes
 
     @sixes.setter
-    def sixes(self, dice: Dice):
+    def sixes(self, dice):
         """Score sixes.
 
         Parameters:
@@ -278,7 +278,7 @@ class UpperSection:
         return self._sixes_scored
 
     @sixes_scored.setter
-    def sixes_scored(self, scored: bool):
+    def sixes_scored(self, scored):
         """Set if sixes has been scored.
 
         Parameters:

@@ -32,7 +32,7 @@ class Yahtzee:
         self._rounds = self.create_rounds()
 
     @property
-    def players(self) -> List[Players]:
+    def players(self):
         """Return list of Players.
         
         Returns:
@@ -41,7 +41,7 @@ class Yahtzee:
         return self._players
 
     @property
-    def rounds(self) -> List[Round]:
+    def rounds(self):
         """Return list of Rounds.
         
         Returns:
@@ -49,7 +49,7 @@ class Yahtzee:
         """
         return self._rounds
 
-    def create_players(self) -> List[Player]:
+    def create_players(self):
         """Create List of Players.
 
         Will ask user how many Players there will be
@@ -71,7 +71,7 @@ class Yahtzee:
 
         return players
 
-    def create_rounds(self) -> List[Round]:
+    def create_rounds(self):
         """Create List of Rounds according to the global NUM_ROUNDS.
         
         A standard game of Yahtzee

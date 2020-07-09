@@ -20,7 +20,7 @@ class Player:
         self._scorecard = Scorecard()
 
     @property
-    def name(self) -> str:
+    def name(self):
         """Return player's name.
         
         Returns:
@@ -29,7 +29,7 @@ class Player:
         return self._name
 
     @property
-    def scorecard(self) -> Scorecard:
+    def scorecard(self):
         """Return player's scorecard.
         
         Returns:
