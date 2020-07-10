@@ -44,3 +44,6 @@ class Player:
             (str)
         """
         return ('Player: ' + self.name + f'\n{self.scorecard.grand_total}')
+
+    def __lt__(self, other_player):
+        return self.scorecard.grand_total < other_player.scorecard.grand_total

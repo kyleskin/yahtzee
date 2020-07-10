@@ -3,7 +3,7 @@
 from typing import List
 from round import Round
 from player import Player
-from print_utils import clear_screen, print_logo
+from print_utils import clear_screen, print_logo, print_winner
 
 
 class Yahtzee:
@@ -83,6 +83,12 @@ class Yahtzee:
         return [Round(self.players, round_num + 1)
                 for round_num in range(self.NUM_ROUNDS)]
 
+    def display_winner(self):
+        """Display the winner in the case of a multiplayer game."""
+        winner = max([player for player in self.players])
+        print_winner(winner)
+
+
 
 def main():
     """Initialize game and start game loop."""
@@ -90,6 +96,9 @@ def main():
 
     for round in y.rounds:
         round.play_round()
+
+    clear_screen()
+    y.display_winner()
 
 
 if __name__ == "__main__":

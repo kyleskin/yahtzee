@@ -63,6 +63,14 @@ def print_scorecard(round_num, player):
     print(player.scorecard)
     print()
 
+def print_winner(player):
+    """Print a message to the winner.
+
+    Parameters:
+        player (Player)
+    """
+    print(f"\n  Congratulations to {player.name}!\n  Your final score was {player.scorecard.grand_total}.")
+
 
 logo = [" .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. .----------------.\n", 
         "| .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. |\n",
